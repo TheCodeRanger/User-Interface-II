@@ -1,1 +1,374 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing:border-box;
+	max-width: 100%;
+} 
+
+html {
+	font-size: 62.5%;
+	font-family: 'Turret Road';
+}
+
+header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1% 1%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	font-family: 'Turret Road';
+}
+
+.titlename {
+	width: 50%;
+	font-size: 3rem;
+}
+
+.introName {
+	text-transform: uppercase;
+	color: white;
+	font-size: 8rem;
+	mix-blend-mode: difference;
+}
+
+.topContainer {
+	width: 100%;
+	margin: 4% 0;
+	line-height: 2;
+	display:flex;
+	justify-content: center;
+}
+
+.topLink {
+	font-size: 2rem;
+	font-weight: bold;
+	border: 2px solid black;
+	text-transform: uppercase;
+}
+
+.links {
+	font-size: 2rem;
+	width: 25%;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid gray;
+	padding: 5px 20px;
+	color: black;
+}
+
+.intro {
+	width:80%;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image:  linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('http://getdrawings.com/image/bjj-drawing-62.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.content{
+	margin: 6% 0;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.content h2 {
+	margin: 2% 0;
+	display: flex;
+	justify-content: center;
+}
+
+.content .picBox{
+	margin: 3% .8%;
+	width: 30%;
+	height: 500px;
+	object-fit: contain;
+}
+
+
+.boxPic1 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 10% 10%;
+	filter: blur(1px);
+	
+}
+
+.boxPic2 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+
+}
+
+.boxPic3 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: ;
+}
+
+.boxPic4 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 40%;
+}
+
+.boxPic5 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.boxPic6 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.footerText {
+	color: black;
+	font-size: 2rem;
+}
+
+.content {
+	font-size: 2rem;
+}
+
+.footerText {
+	border: 1px solid black;
+	background-color: white;
+	margin: 1% 1%;
+	text-transform: uppercase;
+	color: hotpink;
+}
+
+.footerText:hover {
+	background-color: black;
+	color: yellowgreen;
+}
+
+footer {
+	font-size: 1.5rem;
+	height: 100px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: grey;
+	background-size: cover;
+	background-position: bottom;
+	text-align: center;
+}
+
+
+/***************MEDIA QUERY**********/
+
+
+@media(max-width: 800px) {
+	* {
+		/* border: 1px solid gray; */
+		margin: 0;
+		padding: 0;
+	} 
+	
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	
+	
+	.titlename {
+		width: 100%;
+		font-size: 2.5rem;
+		margin: 4% 0;
+	}
+	
+	.introName {
+		font-size: 5rem;
+	}
+	
+	.topContainer {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.topContainer nav a{
+		margin:0 auto;
+	}
+	
+	nav {
+		flex-direction: column;
+	}
+	
+	.intro {
+		width:100%;
+		height: 40vh;
+	}
+
+	.content h2 {
+		margin: 2% 0;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.content .picBox{
+		width: 35%;
+		margin: 5% auto;
+		height: 200px;
+		align-items: center;
+	}
+	
+	.footerText {
+		color: black;
+		font-size: 2rem;
+	}
+	
+	.content {
+		font-size: 2rem;
+	}
+	
+	.footerText {
+		border: 1px solid black;
+		background-color: white;
+		margin: 1% 1%;
+		text-transform: uppercase;
+		color: hotpink;
+	}
+	
+	.footerText:hover {
+		background-color: black;
+		color: yellowgreen;
+	}
+
+} /*CLOSE BRACKET*/
+
+/****MEDIA 500PX****/
+
+@media(max-width: 500px) {
+	
+	.titlename {
+		font-size: 3rem;
+	}
+
+	.introName {
+		font-size: 2.5rem;
+	}
+	
+	.topLink {
+		margin: 0 auto;
+		border: 1px solid black;
+		font-size: 1.4rem;
+	}
+
+	nav {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	
+	.intro {
+		width:100%;
+		height: 25vh;
+	}
+
+	.content h2 {
+		margin: 2% 0;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.content .picBox{
+		width: 35%;
+		margin: 5% auto;
+		height: 200px;
+		align-items: center;
+	}
+	
+	.footerText {
+		color: black;
+		font-size: 2rem;
+	}
+	
+	.content {
+		font-size: 2rem;
+	}
+	
+	.footerText {
+		border: 1px solid black;
+		background-color: white;
+		margin: 1% 1%;
+		text-transform: uppercase;
+		color: hotpink;
+	}
+	
+	.footerText:hover {
+		background-color: black;
+		color: yellowgreen;
+	}
+
+
+} /*CLOSING BRACKET*/
