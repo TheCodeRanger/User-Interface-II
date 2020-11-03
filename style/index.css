@@ -66,8 +66,6 @@ header {
 	font-family: 'Turret Road';
 }
 
-
-
 .titlename {
 	width: 50%;
 	font-size: 3rem;
@@ -128,26 +126,25 @@ a {
 }
 
 .content{
+	margin: 6% 0;
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
+.content h2 {
+	margin: 2% 0;
+	display: flex;
+	justify-content: center;
+}
+
 .content .picBox{
-	margin: .5% .5%;
-	width: 32%;
-	height: 400px;
+	margin: 3% .8%;
+	width: 30%;
+	height: 500px;
 	object-fit: contain;
 }
 
-.textBox {
-	height: 1%;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	padding: .25% 15%;
-	margin: 0 0 4%;
-}
 
 .boxPic1 {
 	width: 100%;
@@ -225,3 +222,153 @@ footer {
 	background-position: bottom;
 	text-align: center;
 }
+
+
+/***************MEDIA QUERY**********/
+
+
+@media(max-width: 800px) {
+	* {
+		/* border: 1px solid gray; */
+		margin: 0;
+		padding: 0;
+	} 
+	
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	
+	
+	.titlename {
+		width: 100%;
+		font-size: 2.5rem;
+		margin: 4% 0;
+	}
+	
+	.introName {
+		font-size: 5rem;
+	}
+	
+	.topContainer {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.topContainer nav a{
+		margin:0 auto;
+	}
+	
+	nav {
+		flex-direction: column;
+	}
+	
+	.intro {
+		width:100%;
+		height: 40vh;
+	}
+
+	.content h2 {
+		margin: 2% 0;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.content .picBox{
+		width: 35%;
+		margin: 5% auto;
+		height: 200px;
+		align-items: center;
+	}
+	
+	.footerText {
+		color: black;
+		font-size: 2rem;
+	}
+	
+	.content {
+		font-size: 2rem;
+	}
+	
+	.footerText {
+		border: 1px solid black;
+		background-color: white;
+		margin: 1% 1%;
+		text-transform: uppercase;
+		color: hotpink;
+	}
+	
+	.footerText:hover {
+		background-color: black;
+		color: yellowgreen;
+	}
+
+} /*CLOSE BRACKET*/
+
+/****MEDIA 500PX****/
+
+@media(max-width: 500px) {
+	
+	.titlename {
+		font-size: 3rem;
+	}
+
+	.introName {
+		font-size: 2.5rem;
+	}
+	
+	.topLink {
+		margin: 0 auto;
+		border: 1px solid black;
+		font-size: 1.4rem;
+	}
+
+	nav {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	
+	.intro {
+		width:100%;
+		height: 25vh;
+	}
+
+	.content h2 {
+		margin: 2% 0;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.content .picBox{
+		width: 35%;
+		margin: 5% auto;
+		height: 200px;
+		align-items: center;
+	}
+	
+	.footerText {
+		color: black;
+		font-size: 2rem;
+	}
+	
+	.content {
+		font-size: 2rem;
+	}
+	
+	.footerText {
+		border: 1px solid black;
+		background-color: white;
+		margin: 1% 1%;
+		text-transform: uppercase;
+		color: hotpink;
+	}
+	
+	.footerText:hover {
+		background-color: black;
+		color: yellowgreen;
+	}
+
+
+} /*CLOSING BRACKET*/
